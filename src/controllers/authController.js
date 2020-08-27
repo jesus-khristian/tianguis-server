@@ -67,7 +67,7 @@ exports.signupUser = (req, res, next) => {
         subject: "Verifica tu cuenta para la App Tianguis",
         html: `
         <h3>-- Porfavor verifica ti cuenta de App Tianguis en el siguiente enlace --</h3>
-        <h4>Click  <a href="${process.env.REACT_APP_SERVER_URL}/auth/verify/${token}">aquí</a> </h4>
+        <h4>Click  <a href="https://tianguis-server.herokuapp.com/auth/verify/${token}">aquí</a> </h4>
                     `,
       });
       res.status(201).json({
@@ -240,7 +240,7 @@ exports.signupSeller = (req, res, next) => {
         subject: "Verifica tu cuenta para la App Tianguis",
         html: `
         <h3>-- Porfavor verifica ti cuenta de App Tianguis en el siguiente enlace --</h3>
-        <h4>Click  <a href="${process.env.REACT_APP_SERVER_URL}/auth/verify/${token}">aquí</a> </h4>
+        <h4>Click  <a href="https://tianguis-server.herokuapp.com/auth/verify/${token}">aquí</a> </h4>
                     `,
       });
       res.status(201).json({
