@@ -23,7 +23,7 @@ const sellerSchema = new Schema(
     },
     formattedAddress: {
       type: String,
-      required: false,
+      required: true,
     },
     imageUrl: [
       {
